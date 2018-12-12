@@ -97,6 +97,21 @@ The goal of this workshop is to explain how to use Git / GitHub correctly
 - [Basic Git commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
 
 ----
-- Bonne pratiques de workflow et git branching avec git flow
+
+### TP
+
+- Fork ce répo
+- Créer une branche avec son pseudo et se mettre sur cette branche
+- Ajouter une balise `a` avec son nom, pseudo et lien github, comme ceci:
+
+```HTML
+<a href="https://github.com/blyndusk" title="blyndusk's github account">Alexandre Delaloy (blyndusk)</a>
+```
+
+- créer une pull request avec vos modifications situé sur votre branche
+- Envoyer la pull request
+
+----
+
 - Sémantique de versioning
 - Gestion de projet Github
