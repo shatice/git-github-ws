@@ -14,6 +14,8 @@ The goal of this workshop is to explain how to use Git / GitHub correctly
     - check your global username : 
         - `git config --global user.email`
 
+----
+
 ## Create a SSH key
 
 - checking for existing key:
@@ -46,3 +48,55 @@ The goal of this workshop is to explain how to use Git / GitHub correctly
         - Add a title: `Example: Personnal computer SSH key`
         - Paste your public key
         - Add your SSH key
+
+----
+
+## Basics commands
+
+### Create / clone a repository
+
+- `git init`: create a new local repository
+- `git remote add origin <github repository>`: connect your local repo to your distant repo
+- `git clone`: clone your distant repo to a local folder
+
+### Interract with files
+
+- `git status | gst` : show only the files with modifications
+- `git add | ga` :
+    - `git add <file>` : Add a specific file
+    - `git add . | ga .` : Add all files with modifications
+-  `git commit | gc` :
+    - `git commit -m "commit message" | gc -m "commit message"` : commit your file with an informative message
+- `git reset` :  reset all or specific files yiu have commited
+- `git stash` : stock your changing file in a different place, so you can recover your changes in another branch
+    - `git stash list` : display a list of your stashes
+    - `git stash apply stash@{$}` : Recove your stash in your current branch
+
+### Send and recove versions
+
+- `git pull / git pull origin <branch> | gl` :
+    - `git pull | gl` : default pull command, like `git pull origin master`. It'll recove the version of the code in the `master` branch
+    - `git pull origin <specific branch>` : It'll recove the version of the code in a specific branch
+
+- `git push / git push origin <branch> | gp` :
+     - `git push | gp` : default push command, like `git push origin master`. It'll send the version of the code in the `master` branch
+    - `git push origin <specific branch>` : It'll send the version of the code in a specific branch
+
+### Working with branches
+
+- `git checkout <branch> | gco <branch>` : change your current branch
+    - `git checkout -b <branch> | gco -b <branch>` : create a new branch and change to it
+- `git branch` :  list all the branches
+    - `git branch -d <branch>` : delete a specific branch
+
+----
+
+### Sources
+
+- [GitHub Help](https://help.github.com/)
+- [Basic Git commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
+
+----
+- Bonne pratiques de workflow et git branching avec git flow
+- Sémantique de versioning
+- Gestion de projet Github
